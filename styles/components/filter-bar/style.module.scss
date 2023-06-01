@@ -1,0 +1,46 @@
+@import "../../scss/colors";
+@import "../../scss/variables";
+@import "../../scss/tools";
+
+.links {
+    &-container {
+        display : flex;
+        flex-direction: column;
+        gap : 12px;
+        margin-top: 16px;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lighten($primary-main-color, 75%);
+        padding-block: 8px;
+        cursor: pointer;
+    }
+}
+
+.popular {
+    &-items {
+        font-size : 12px;
+        color : lighten($color: $primary-main-color, $amount: 40%) !important;
+
+        &:hover{
+            color : lighten($color: $primary-main-color, $amount: 20%) !important;
+        }
+    }
+}
+
+.number-input {
+    width : 60px !important;
+    background-color: lighten($secondary-dark-color, 40%) !important;
+    border: none !important;
+    padding: 5px !important;
+
+    & input {
+        background-color: transparent !important;
+    }
+}
+
+
+

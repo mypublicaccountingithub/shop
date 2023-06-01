@@ -1,0 +1,34 @@
+@import "../../scss/colors";
+@import "../../scss/variables";
+@import "../../scss/tools";
+
+.product-container{
+    display: grid;
+    height : 100%;
+    justify-content: space-evenly;
+    gap : 12px;
+
+    &-grid {
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    }
+
+    &-list {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.action-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 4px;
+    background-color: $secondary-light-color;
+}
+
+.action-button {
+    @apply flex items-center justify-center border-none shadow-none bg-transparent;
+}
+
+.add-to-cart-button {
+    @apply uppercase border-0 border-b-2 px-0 font-bold bg-secondary-dark/5 text-[12px];
+}
